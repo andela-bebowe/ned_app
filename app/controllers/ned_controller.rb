@@ -1,10 +1,11 @@
 class NedController < ApplicationController
   def index
-    "Index"
+    @me = 67
+    @id = "girl"
   end
 
   def new
-    "I am new"
+    render(:new, id: "#{params['id']}")
   end
 
   def create
