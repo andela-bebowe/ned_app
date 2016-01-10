@@ -1,11 +1,11 @@
-TodoApplication.routes.draw do
-  # get "/todo", to: "todo#index"
-  # get "/todo/new", to: "todo#new"
-  # get "/todo/:id", to: "todo#show"
-  # get("/todo/:id/edit", to: "todo#edit")
-  # post("/todo", to: "todo#create")
-  # patch("/todo/:id", to: "todo#update")
-  # put("/todo/:id", to: "todo#update")
-  # delete("/todo/:id", to: "todo#destroy")
-  resources(:todo)
+PostApplication.routes.draw do
+  # get "/posts", to: "post#index"
+  # get "/posts/new", to: "post#new"
+  # get "/posts/:id", to: "post#show"
+  # get("/posts/edit/:id", to: "post#edit")
+  # post("/posts", to: "post#create")
+  # patch("/posts/:id", to: "post#update")
+  # put("/posts/:id", to: "post#update")
+  # delete("/posts/:id", to: "post#destroy")
+  resources(:posts)
 end

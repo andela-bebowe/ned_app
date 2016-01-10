@@ -1,5 +1,5 @@
 PATH
-  remote: ../
+  remote: ../../
   specs:
     neddinna (0.1.0)
       rack (~> 1.6.4)
