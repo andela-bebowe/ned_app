@@ -11,6 +11,10 @@ class PostsController < ApplicationController
     @post = post
   end
 
+  def no_template
+    "I have no template"
+  end
+
   def edit
     @post = post
   end
