@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+    body {
+      width: 70%;
+      margin-left: 10%;
+      font-size: 30px;
+    }
+    a {
+      width: 30%;
+      height: 50px;
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .single-post {
+      width: 80%;
+    }
+    </style>
+    <meta charset="utf-8">
+    <title>Index</title>
+  </head>
+  <body>
+    <h2>All Posts</h2>
+    <% posts.each do |post| %>
+      <div class="single-post">
+        <h3><%=post.title%></h3>
+        <p>
+          <%=post.description%>
+        </p>
+        <p>
+          <%=post.author.capitalize%>
+        </p>
+        <a href="/posts/edit/<%=post.id%>">Edit</a>
+        <a href="/posts/delete/<%=post.id%>">Delete</a>
+      </div>
+    <% end %>
+    <a href="/posts/new" style="margin-top: 10px;">Create new Post.</a>
+  </body>
+</html>
