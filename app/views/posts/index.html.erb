@@ -1,26 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style media="screen">
-    body {
-      width: 70%;
-      margin-left: 10%;
-      font-size: 30px;
-    }
-    a {
-      width: 30%;
-      height: 50px;
-      padding: 12px 20px;
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 30px;
-    }
-    .single-post {
-      width: 80%;
-    }
-    </style>
     <meta charset="utf-8">
     <title>Index</title>
+    <link rel="stylesheet" href="/css/style.css" media="screen">
   </head>
   <body>
     <h2>All Posts</h2>
@@ -31,7 +14,7 @@
           <%=post.description%>
         </p>
         <p>
-          <%=post.author.capitalize%>
+          By <%=post.author.capitalize%>
         </p>
         <a href="/posts/edit/<%=post.id%>">Edit</a>
         <a href="/posts/delete/<%=post.id%>">Delete</a>
